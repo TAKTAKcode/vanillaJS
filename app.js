@@ -11,6 +11,7 @@ function onLoginSubmit(event) {
     //greeting.innerText = "Hello " + username;
     greeting.innerText = `Hello ${username}`;   // '', "" 는 작동하지않는다 `만 작동한다
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    console.log("그냥 커밋테스트 코드 추가");
 }
  
 
