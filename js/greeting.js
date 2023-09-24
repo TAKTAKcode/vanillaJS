@@ -29,7 +29,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername === null) {   //show the form
     loginForm.classList.remove(HIDDEN_CLASSNAME);
-    loginForm.addEventListener("submit", onLoginSubmit);
+    loginForm.addEventListener("submit", onLoginSubmit);        //윗줄의 remove"hideen"를 통해 보여진 로그인 폼이 submit이 발생하면 시작
 } else {                        //show the greeting
     paintGreeting(savedUsername);
 }
