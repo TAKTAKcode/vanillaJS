@@ -19,8 +19,9 @@ function saveToDos () {
  */
 function deleteToDo (event) {
     const li = event.target.parentElement;
-    console.log(li.id);
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 /**
@@ -66,17 +67,17 @@ if (savedToDos !== null) {
 }
 
 
-function listFilter() {
+// function listFilter() {
 
 
-}
+// }
 
-[1, 2, 3, 4].filter(listFilter)
+// [1, 2, 3, 4].filter(listFilter)
 
-listFilter(1) = 1
-listFilter(2) = 2
-listFilter(3) = 3
-listFilter(4) = 4
+// listFilter(1) = 1
+// listFilter(2) = 2
+// listFilter(3) = 3
+// listFilter(4) = 4
 
 
 
